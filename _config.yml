@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-f26/team01-f26-09
 owner: ucsb-cs156-f26
 repo_name: team01-f26-09
-pull_requests: [{"author":{"id":"U_kgDOCxQ66g","is_bot":false,"login":"avash124","name":""},"headRefName":"helprequests_aryan_vashishta_crud_","number":53,"title":"full implementation of get, post, put, and delete crud operations on …","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/53"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjExMTkwMTc=","is_bot":false,"login":"pconrad","name":"Phill Conrad"},"headRefName":"remove-wf82","number":54,"title":"Remove workflow 82; the Kanban Slack summary now runs centrally","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/54"},{"author":{"id":"U_kgDOCxQ66g","is_bot":false,"login":"avash124","name":""},"headRefName":"helprequests_aryan_vashishta_crud_","number":53,"title":"full implementation of get, post, put, and delete crud operations on …","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/53"}]
