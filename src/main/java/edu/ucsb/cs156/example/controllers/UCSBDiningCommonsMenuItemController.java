@@ -45,6 +45,9 @@ public class UCSBDiningCommonsMenuItemController extends ApiController {
    * This method returns a single diningcommonsmenuitem.
    *
    * @param code code of the diningcommonsmenuitem
+   * @param diningCommonsCode diningCommonsCode of the diningcommonsmenuitem
+   * @param name name of the diningcommonsmenuitem
+   * @param station station of the diningcommonsmenuitem
    * @return a single diningcommonsmenuitem
    */
   @Operation(summary = "Get a single commons menu item")
