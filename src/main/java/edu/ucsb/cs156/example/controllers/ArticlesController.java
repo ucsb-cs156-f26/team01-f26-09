@@ -32,7 +32,7 @@ public class ArticlesController extends ApiController {
    *
    * @return an iterable of Article
    */
-  @Operation(summary = "List all ucsb dates")
+  @Operation(summary = "List all articles")
   @PreAuthorize("hasRole('ROLE_USER')")
   @GetMapping("/all")
   public Iterable<Article> allArticles() {
@@ -44,9 +44,9 @@ public class ArticlesController extends ApiController {
    * Get a single article by id
    *
    * @param id the id of the date
-   * @return a Article
+   * @return a specfic Article
    */
-  @Operation(summary = "Get a single article")
+  @Operation(summary = "Get a specific article by its numerical id")
   @PreAuthorize("hasRole('ROLE_USER')")
   @GetMapping("")
   public Article getById(@Parameter(name = "id") @RequestParam Long id) {
@@ -66,7 +66,7 @@ public class ArticlesController extends ApiController {
    * @param explanation explanation of the article
    * @param email email of the user that submitted the article
    * @param dateAdded the date the article was added
-   * @return the saved ucsbdate
+   * @return the saved article
    */
   @Operation(summary = "Create a new article")
   @PreAuthorize("hasRole('ROLE_ADMIN')")
