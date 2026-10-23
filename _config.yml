@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-f26/team01-f26-09
 owner: ucsb-cs156-f26
 repo_name: team01-f26-09
-pull_requests: [{"author":{"id":"U_kgDOC6C_nA","is_bot":false,"login":"td-marsters","name":""},"headRefName":"42-add-delete-endpoint-for-a-specific-record-in-articles-table","number":100,"title":"tm - Added DELETE endpoint to Articles Controller so that articles ca…","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/100"},{"author":{"id":"MDQ6VXNlcjQ0NDcyNTY3","is_bot":false,"login":"bogsaff","name":"Bogdan Safonov"},"headRefName":"main","number":55,"title":"Controller","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/55"}]
+pull_requests: [{"author":{"id":"MDQ6VXNlcjQ0NDcyNTY3","is_bot":false,"login":"bogsaff","name":"Bogdan Safonov"},"headRefName":"main","number":55,"title":"Controller","url":"https://github.com/ucsb-cs156-f26/team01-f26-09/pull/55"}]
