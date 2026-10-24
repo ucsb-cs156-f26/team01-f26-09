@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /** This is a REST controller for UCSBDiningCommonsMenuItem */
 @Tag(name = "UCSBDiningCommonsMenuItem")
-@RequestMapping("/api/UCSBDiningCommonsMenuItem")
+@RequestMapping("/api/ucsbdiningcommonsmenuitem")
 @RestController
 @Slf4j
 public class UCSBDiningCommonsMenuItemController extends ApiController {
@@ -33,7 +33,7 @@ public class UCSBDiningCommonsMenuItemController extends ApiController {
    *
    * @return a list of all UCSBDiningCommonsMenuItem
    */
-  @Operation(summary = "List all ucsb dining commons")
+  @Operation(summary = "ListX all ucsb dining commons")
   @PreAuthorize("hasRole('ROLE_USER')")
   @GetMapping("/all")
   public Iterable<UCSBDiningCommonsMenuItem> allCommonss() {
@@ -44,10 +44,6 @@ public class UCSBDiningCommonsMenuItemController extends ApiController {
   /**
    * This method returns a single diningcommonsmenuitem.
    *
-   * @param code code of the diningcommonsmenuitem
-   * @param diningCommonsCode diningCommonsCode of the diningcommonsmenuitem
-   * @param name name of the diningcommonsmenuitem
-   * @param station station of the diningcommonsmenuitem
    * @return a single diningcommonsmenuitem
    */
   @Operation(summary = "Get a single commons menu item")
@@ -65,13 +61,10 @@ public class UCSBDiningCommonsMenuItemController extends ApiController {
   /**
    * This method creates a new diningcommons. Accessible only to users with the role "ROLE_ADMIN".
    *
-   * @param code code of the diningcommons
-   * @param name name of the diningcommons
-   * @param hasSackMeal whether or not the commons has sack meals
-   * @param hasTakeOutMeal whether or not the commons has take out meals
-   * @param hasDiningCam whether or not the commons has a dining cam
-   * @param latitude latitude of the commons
-   * @param longitude logitude of the commons
+   * @param code code of the diningcommonsmenuitem
+   * @param diningCommonsCode diningCommonsCode of the diningcommonsmenuitem
+   * @param name name of the diningcommonsmenuitem
+   * @param station station of the diningcommonsmenuitem
    * @return the save diningcommons
    */
   @Operation(summary = "Create a new commons")
