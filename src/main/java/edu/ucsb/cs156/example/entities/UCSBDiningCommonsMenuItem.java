@@ -1,8 +1,6 @@
 package edu.ucsb.cs156.example.entities;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,10 +19,9 @@ import lombok.NoArgsConstructor;
 @Entity(name = "ucsbdiningcommonsmenuitem")
 public class UCSBDiningCommonsMenuItem {
   @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id;
+  // @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private String code; // private long id;
 
-  private String code;
   private String diningCommonsCode;
   private String name;
   private String station;
