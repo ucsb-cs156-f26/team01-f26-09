@@ -1,7 +1,8 @@
-{ "databaseChangeLog": [
-    {
+{
+    "databaseChangeLog": [
+      {
         "changeSet": {
-          "id": "UCSBDiningCommonsMenuItem-1",
+          "id": "UCSBDiningCommonsMenuItems-1",
           "author": "bogsaff",
           "preConditions": [
             {
@@ -11,7 +12,7 @@
               "not": [
                 {
                   "tableExists": {
-                    "tableName": "UCSBDININGCOMMONSMENUITEM"
+                    "tableName": "UCSBDININGCOMMONSMENUITEMS"
                   }
                 }
               ]
@@ -23,9 +24,10 @@
                 "columns": [
                   {
                     "column": {
+                      "autoIncrement": true,
                       "constraints": {
                         "primaryKey": true,
-                        "primaryKeyName": "UCSBDININGCOMMONSMENUITEM_PK"
+                        "primaryKeyName": "UCSBDININGCOMMONSMENUITEMS_PK"
                       },
                       "name": "ID",
                       "type": "BIGINT"
@@ -33,46 +35,28 @@
                   },
                   {
                     "column": {
-                      "constraints": {
-                        "nullable": false
-                      },
-                      "name": "CODE",
-                      "type": "VARCHAR(255)"
-                    }
-                  },
-                  {
-                    "column": {
-                      "constraints": {
-                        "nullable": false
-                      },
                       "name": "DINING_COMMONS_CODE",
                       "type": "VARCHAR(255)"
                     }
                   },
                   {
                     "column": {
-                      "constraints": {
-                        "nullable": false
-                      },
                       "name": "NAME",
                       "type": "VARCHAR(255)"
                     }
                   },
                   {
                     "column": {
-                      "constraints": {
-                        "nullable": false
-                      },
                       "name": "STATION",
                       "type": "VARCHAR(255)"
                     }
                   }
-                ]
-                 ,
-                "tableName": "UCSBDININGCOMMONSMENUITEM"
+                ],
+                "tableName": "UCSBDININGCOMMONSMENUITEMS"
               }
-            }]
-
+            }
+          ]
         }
-    }
-]}
+      }
+    ]
+  }
